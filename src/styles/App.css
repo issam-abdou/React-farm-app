@@ -1,0 +1,418 @@
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* ========= VARIABLES ========= */
+:root{
+    --grey-color:#ebebeb;
+    --yellow-color:#ffb606;
+    --dark-blue:#23282d;
+    --bg-sectionn:#f2f7fa;
+    --green-color:#367c2b;
+}
+
+/* ========= Componenets========= */
+.section-title{
+    font-weight: 800;
+}
+
+/* ============= start top nav =========== */
+.top__nav{
+    background-color:var(--grey-color) ;
+}
+/* ============= end top nav =========== */
+/* ============= start nav =========== */
+.navbar{
+    background-color:var(--dark-blue) ;
+}
+.navbar-toggler svg{
+    color: white;
+    font-size: 25px;
+}
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+a.nav-link{
+    color: white;
+    transition: .2s ease;
+}
+a.nav-link:not(.nav-btn):hover{
+    color: var(--yellow-color);
+}
+.nav-btn{
+    background-color: var(--yellow-color);
+}
+.nav-btn:hover{
+    background-color: #fdbb20;
+    color: white;
+}
+/* TO DO
+- change the position (to center) of the button for mobile ??
+- put the button on the top nav ??
+*/
+
+/* ============= start hero =========== */
+.hero{
+    background-image: url('../imgs/banner1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    
+}
+.hero-btn{
+    border:solid 2px var(--yellow-color);
+}
+/* 
+TO DO:
+- edit the width of the bottons for mobile.
+*/
+/* ============= end hero =========== */
+/* ============= start why-us =========== */
+.why-us{
+    /* background-color: var(--bg-sectionn); */
+}
+.why-us .card p{
+    max-width: 250px;
+    
+}
+
+.why-us svg{
+    font-size: 70px;
+    color: var(--yellow-color);
+}
+/* ============= end why-us =========== */
+/* ============= start products =========== */
+
+a,
+a:hover {
+    text-decoration: none;
+    /* color: inherit; */
+}
+
+.section-products {
+    padding: 80px 0 54px;
+}
+
+.section-products .header {
+    margin-bottom: 50px;
+}
+
+.section-products .header h3 {
+    font-size: 1rem;
+    color: #fe302f;
+    font-weight: 500;
+}
+
+.section-products .header h2 {
+    font-size: 2.2rem;
+    font-weight: 400;
+    color: #444444; 
+}
+
+.section-products .single-product {
+    margin-bottom: 26px;
+}
+
+.section-products .single-product .part-1 {
+    position: relative;
+    height: 290px;
+    max-height: 290px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.section-products .single-product .part-1::before {
+		position: absolute;
+		content: "";
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: -1;
+		transition: all 0.3s;
+}
+
+/* .section-products .single-product:hover .part-1::before {
+		transform: scale(1.2,1.2) rotate(5deg);
+} */
+
+.section-products #product-1 .part-1::before {
+    background: url("../imgs/product-1.webp") no-repeat center;
+    background-size: cover;
+		transition: all 0.3s;
+}
+
+.section-products #product-2 .part-1::before {
+    background: url("../imgs/product-2.webp") no-repeat center;
+    background-size: cover;
+}
+
+.section-products #product-3 .part-1::before {
+    background: url("../imgs/product-4.webp") no-repeat center;
+    background-size: cover;
+}
+
+.section-products #product-4 .part-1::before {
+    background: url("../imgs/product-3.webp") no-repeat center;
+    background-size: cover;
+}
+
+.section-products .single-product .part-1 .discount,
+.section-products .single-product .part-1 .new {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    color: #ffffff;
+    background-color: #fe302f;
+    padding: 2px 8px;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+}
+
+.section-products .single-product .part-1 .new {
+    left: 0;
+    background-color: #444444;
+}
+
+.section-products .single-product .part-1 ul {
+    position: absolute;
+    bottom: -41px;
+    left: 20px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    opacity: 0;
+    transition: bottom 0.5s, opacity 0.5s;
+}
+
+.section-products .single-product:hover .part-1 ul {
+    bottom: 30px;
+    opacity: 1;
+}
+
+.section-products .single-product .part-1 ul li {
+    display: inline-block;
+    margin-right: 4px;
+}
+
+.section-products .single-product .part-1 ul li a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #ffffff;
+    color: #444444;
+    text-align: center;
+    box-shadow: 0 2px 20px rgb(50 50 50 / 10%);
+    transition: color 0.2s;
+}
+
+.section-products .single-product .part-1 ul li a:hover {
+    color: #fe302f;
+}
+
+.section-products .single-product .part-2 .product-title {
+    font-size: 1rem;
+}
+
+.section-products .single-product .part-2 h4 {
+    display: inline-block;
+    font-size: 1rem;
+}
+
+.section-products .single-product .part-2 .product-old-price {
+    position: relative;
+    padding: 0 7px;
+    margin-right: 2px;
+    opacity: 0.6;
+}
+
+.section-products .single-product .part-2 .product-old-price::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #444444;
+    transform: translateY(-50%);
+}
+.product-img img{
+    object-fit: contain;
+    /* width: 350px; */
+    
+}
+.product-details{
+    color: var(--green-color);   
+}
+.product-details:hover{
+    color: black;
+}
+
+/* CODE LINK : https://codepen.io/HamzaGourram/pen/XWMEvgr */
+
+/* Draft products HTML */
+/* 
+<!-- Single Product-->
+                                    <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div id="product-1" class="single-product">
+                                                    <div class="part-1">
+                                                            
+                                                    </div>
+                                                    <div class="part-2">
+                                                            <h3 class="product-title">Here Product Title</h3>
+                                                            <h4 class="product-old-price">$79.99</h4>
+                                                            <h4 class="product-price">$49.99</h4>
+                                                    </div>
+                                            </div>
+                                    </div>
+                                    <!-- Single Product -->
+                                    <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div id="product-2" class="single-product">
+                                                    <div class="part-1">
+                                                            
+                                                    </div>
+                                                    <div class="part-2">
+                                                            <h3 class="product-title fw-bold">Here Product Title</h3>
+                                                            <a href="#" class="product-price">Details du produit</a href="#">
+                                                    </div>
+                                            </div>
+                                    </div>
+                                    <!-- Single Product -->
+                                    <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div id="product-3" class="single-product">
+                                                    <div class="part-1">
+                                                            
+                                                    </div>
+                                                    <div class="part-2">
+                                                            <h3 class="product-title">Here Product Title</h3>
+                                                            <h4 class="product-old-price">$79.99</h4>
+                                                            <h4 class="product-price">$49.99</h4>
+                                                    </div>
+                                            </div>
+                                    </div>
+                                    <!-- Single Product -->
+                                    <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div id="product-4" class="single-product">
+                                                    <div class="part-1">
+                                                            <span class="new">new</span>
+                                                            
+                                                    </div>
+                                                    <div class="part-2">
+                                                            <h3 class="product-title">Here Product Title</h3>
+                                                            <h4 class="product-price">$49.99</h4>
+                                                    </div>
+                                            </div>
+                                    </div>
+                                    <!-- Single Product -->
+                                    <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div id="product-1" class="single-product">
+                                                    <div class="part-1">
+                                                            
+                                                    </div>
+                                                    <div class="part-2">
+                                                            <h3 class="product-title">Here Product Title</h3>
+                                                            <h4 class="product-old-price">$79.99</h4>
+                                                            <h4 class="product-price">$49.99</h4>
+                                                    </div>
+                                            </div>
+                                    </div>
+                                    <!-- Single Product -->
+                                    <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div id="product-2" class="single-product">
+                                                    <div class="part-1">
+                                                            
+                                                    </div>
+                                                    <div class="part-2">
+                                                            <h3 class="product-title">Here Product Title</h3>
+                                                            <h4 class="product-price">$49.99</h4>
+                                                    </div>
+                                            </div>
+                                    </div>
+                                    <!-- Single Product -->
+                                    <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div id="product-3" class="single-product">
+                                                    <div class="part-1">
+                                                            
+                                                    </div>
+                                                    <div class="part-2">
+                                                            <h3 class="product-title">Here Product Title</h3>
+                                                            <h4 class="product-old-price">$79.99</h4>
+                                                            <h4 class="product-price">$49.99</h4>
+                                                    </div>
+                                            </div>
+                                    </div>
+                                    <!-- Single Product -->
+                                    <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div id="product-4" class="single-product">
+                                                    <div class="part-1">
+                                                            <span class="new">new</span>
+                                                            
+                                                    </div>
+                                                    <div class="part-2">
+                                                            <h3 class="product-title">Here Product Title</h3>
+                                                            <h4 class="product-price">$49.99</h4>
+                                                    </div>
+                                            </div>
+                                    </div> -->
+
+*/
+
+/* TO DO:
+- remove text-start from the product card and try to center it for mobile screen
+*/
+/* ============= end products =========== */
+/* ============= start contact =========== */
+
+
+.contact__map{
+    position: relative;
+    margin-bottom: 200px;
+}
+textarea{
+    resize: none;
+}
+textarea::placeholder{
+    display: block;
+}
+.form-btn{
+    background-color: var(--yellow-color);
+    color: white;
+    font-weight: 600;
+    border-radius: 0;
+}
+form .row input,form .row textarea {
+    border-radius: 0;
+    padding: 0.7rem;
+}
+/* ============= end contact =========== */
+/* ============= start footer =========== */
+footer{
+    background-color:#f1f0f0;
+}
+/* .footer__icons  li a {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    border-radius: 50%;
+}  */
+.facebook{
+    color: #1877f2;
+}
+.twitter{
+    color: #1da1f2;
+}
+.linkedin{
+    color: #0077b5;
+}
+.youtube{
+    color: #ff0000;
+}
+/* ============= end footer =========== */
+

@@ -3,9 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+// import bootstrap
+import "bootstrap/dist/css/bootstrap.min.css"
+import "bootstrap/dist/js/bootstrap.bundle.min.js"
+
 
 ReactDOM.render(
-  <React.StrictMode>
+  <React.StrictMode>s
     <App />
   </React.StrictMode>,
   document.getElementById('root')
