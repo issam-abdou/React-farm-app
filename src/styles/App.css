@@ -30,7 +30,7 @@ a{
 .navbar{
     background-color:var(--dark-blue) ;
 }
-.navbar-toggler svg{
+.navbar-toggler i{
     color: white;
     font-size: 25px;
 }
@@ -82,7 +82,7 @@ TO DO:
     
 }
 
-.why-us svg{
+.why-us i{
     font-size: 70px;
     color: var(--yellow-color);
 }

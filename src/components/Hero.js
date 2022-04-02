@@ -1,6 +1,8 @@
 import React from "react"
 
+
 export default function Hero(){
+    
     return (
         <section className="hero text-center pt-5 pb-5 text-white d-flex align-items-center justify-content-center ">
             <div className="hero__content">

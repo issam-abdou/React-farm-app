@@ -24,6 +24,7 @@ export default function Products() {
                                         <div className="part-2 text-md-start">
                                                 <h3 className="product-title fw-bold">Product Title</h3>
                                                 <a href="/" className="product-details">Details</a>
+                                                <a href='../../public/files/test.txt' download ="issam">download Catalogue</a>
                                         </div>
                                 </div>
                             </div>
