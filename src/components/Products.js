@@ -7,7 +7,7 @@ import product4 from "../imgs/product-1.webp"
 
 export default function Products() {
   return (
-    <section className="section-products pt-4 pb-4">
+    <section className="section-products pt-4 pb-4" id="products">
             <div className="container">
                 <h2 className="section-title text-center fw-bold mt-5 mb-5 fs-2 text-uppercase ">
                     nos produits

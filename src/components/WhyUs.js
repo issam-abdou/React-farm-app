@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function WhyUs() {
   return (
-    <section className="why-us pt-3 pb-3">
+    <section className="why-us pt-3 pb-3" id="why-us">
             <div className="container">
                 <h2 className="section-title text-center fw-bold mt-5 mb-5 fs-2 text-uppercase ">
                     Pourquoi Nous

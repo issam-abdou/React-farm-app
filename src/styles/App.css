@@ -2,6 +2,9 @@
 body{
     font-family: 'Open Sans', sans-serif;
 }
+body *{
+    border: solid red 1px;
+}
 
 a{
     text-decoration: none;

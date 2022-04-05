@@ -4,7 +4,7 @@ import aboutImg from "../imgs/portfolio2.jpg"
 
 export default function About() {
   return (
-    <section className="about pt-3 ">
+    <section className="about pt-3 " id="about">
     <div className="container">
     
         <h2 className="section-title text-center fw-bold mt-5 mb-5 fs-2 text-uppercase fw-bold">
